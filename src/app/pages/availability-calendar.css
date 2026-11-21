@@ -1,0 +1,21 @@
+.weekday-compact {
+  display: inline;
+}
+
+.weekday-desktop {
+  display: none;
+}
+
+@media (min-width: 48rem) {
+  .weekday-compact {
+    display: none;
+  }
+
+  .weekday-desktop {
+    display: inline;
+  }
+
+  .calendar-day-cell {
+    padding-block: 0.75rem;
+  }
+}

@@ -1,0 +1,260 @@
+<main id="main">
+       <header class="border-b border-ink-line bg-ink px-5 pt-36 pb-16 text-white md:px-10 md:pt-44 md:pb-24 ">
+              <div class="mx-auto max-w-[1600px]">
+                     <p class="label flex items-center gap-3 text-accent-on-dark "><span class="tnum">{{
+                                   'PAGES.PROPERTIES.TEXT_0001' | translate }}</span><span class="h-px w-8 bg-gold/40"
+                                   aria-hidden="true"></span><span>{{ 'PAGES.PROPERTIES.TEXT_0002' | translate }}</span>
+                     </p>
+                     <h1 class="mt-8 max-w-4xl font-display text-display-1">{{ 'PAGES.PROPERTIES.TEXT_0003' | translate
+                            }}</h1>
+                     <p class="measure mt-8 text-lg leading-relaxed text-white/70 md:text-xl">{{
+                            'PAGES.PROPERTIES.TEXT_0004' | translate }}</p>
+              </div>
+       </header>
+       <section class="bg-paper text-ink py-12 md:py-16 ">
+              <div class="mx-auto max-w-[1600px] px-5 md:px-10">
+                     <div data-property-filters="">
+                            <div class="border-b-2 border-gold"></div>
+                            <ul class="mt-10 grid gap-x-8 gap-y-12 md:grid-cols-2 lg:grid-cols-3" data-property-grid="">
+                                   <li class="flex" data-property="" data-town="portimao" data-type="apartment"
+                                          data-typology="T1" data-reveal="" data-reveal-delay="0">
+                                          <article class="group flex flex-col w-full" data-town="portimao"
+                                                 data-type="apartment" data-typology="T1"><a
+                                                        class="block overflow-hidden"
+                                                        [routerLink]="'ROUTES.PROPERTY_DETAIL' | translate"><img
+                                                               src="_astro/01.BbE-xyL4_Z2emTd1.webp"
+                                                               srcset="_astro/01.BbE-xyL4_24g7df.webp 400w, _astro/01.BbE-xyL4_Z1k62Wh.webp 700w, _astro/01.BbE-xyL4_27P3vh.webp 1000w"
+                                                               alt="{{ 'PAGES.PROPERTIES.ATTR_0001' | translate }}"
+                                                               sizes="(min-width: 1024px) 30vw, (min-width: 768px) 45vw, 92vw"
+                                                               style="aspect-ratio: 4 / 5;" loading="lazy"
+                                                               decoding="async" width="1920" height="2879"
+                                                               class="w-full object-cover transition-transform duration-700 group-hover:scale-[1.02]"></a>
+                                                 <div class="flex flex-col">
+                                                        <!-- Town leads, then the two facts a reader actually filters on. -->
+                                                        <p
+                                                               class="label flex flex-wrap items-center gap-x-2.5 gap-y-1 mt-6 text-accent-on-light">
+                                                               <span>{{ 'PAGES.PROPERTIES.TEXT_0005' | translate
+                                                                      }}</span><span class="h-2.5 w-px bg-gold-deep/40"
+                                                                      aria-hidden="true"></span><span>{{
+                                                                      'PAGES.PROPERTIES.TEXT_0006' | translate
+                                                                      }}</span><span class="h-2.5 w-px bg-gold-deep/40"
+                                                                      aria-hidden="true"></span><span>{{
+                                                                      'PAGES.PROPERTIES.TEXT_0007' | translate }}</span>
+                                                        </p>
+                                                        <h2 class="mt-3 font-display text-3xl"><a class="link-underline"
+                                                                      [routerLink]="'ROUTES.PROPERTY_DETAIL' | translate">{{
+                                                                      'PAGES.PROPERTIES.TEXT_0008' | translate }}</a>
+                                                        </h2>
+                                                        <p class="measure mt-3 text-sm leading-relaxed text-muted">{{
+                                                               'PAGES.PROPERTIES.TEXT_0009' | translate }}</p><!-- Chips rather than a run of grey text: a reader scans these, and the icon
+       carries the meaning faster than the word does. -->
+                                                        <ul class="mt-5 flex flex-wrap gap-2">
+                                                               <li
+                                                                      class="inline-flex items-center gap-1.5 border px-2.5 py-1.5 text-xs border-paper-line bg-paper-lift text-ink">
+                                                                      <svg viewBox="0 0 24 24"
+                                                                             class="h-3.5 w-3.5 shrink-0 text-gold-deep"
+                                                                             fill="none" stroke="currentColor"
+                                                                             stroke-width="1.6" stroke-linecap="round"
+                                                                             stroke-linejoin="round" aria-hidden="true">
+                                                                             <path
+                                                                                    d="M2 15.5c2.2-2 4.4-2 6.6 0s4.4 2 6.6 0 4.4-2 6.8 0M2 19.5c2.2-2 4.4-2 6.6 0s4.4 2 6.6 0 4.4-2 6.8 0M12 3.5a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7">
+                                                                             </path>
+                                                                      </svg>{{ 'PAGES.PROPERTIES.TEXT_0010' | translate
+                                                                      }}</li>
+                                                               <li
+                                                                      class="inline-flex items-center gap-1.5 border px-2.5 py-1.5 text-xs border-paper-line bg-paper-lift text-ink">
+                                                                      <svg viewBox="0 0 24 24"
+                                                                             class="h-3.5 w-3.5 shrink-0 text-gold-deep"
+                                                                             fill="none" stroke="currentColor"
+                                                                             stroke-width="1.6" stroke-linecap="round"
+                                                                             stroke-linejoin="round" aria-hidden="true">
+                                                                             <path
+                                                                                    d="M3 9.5h18M3 20.5h18M5 9.5v11M9 9.5v11M12 9.5v11M15 9.5v11M19 9.5v11M6 6h12">
+                                                                             </path>
+                                                                      </svg>{{ 'PAGES.PROPERTIES.TEXT_0011' | translate
+                                                                      }}</li>
+                                                               <li
+                                                                      class="inline-flex items-center gap-1.5 border px-2.5 py-1.5 text-xs border-paper-line bg-paper-lift text-ink">
+                                                                      <svg viewBox="0 0 24 24"
+                                                                             class="h-3.5 w-3.5 shrink-0 text-gold-deep"
+                                                                             fill="none" stroke="currentColor"
+                                                                             stroke-width="1.6" stroke-linecap="round"
+                                                                             stroke-linejoin="round" aria-hidden="true">
+                                                                             <path
+                                                                                    d="M2 16.5c2-1.8 4-1.8 6 0s4 1.8 6 0 4-1.8 6 0M2 20.5c2-1.8 4-1.8 6 0s4 1.8 6 0 4-1.8 6 0M8 14V5.5a2 2 0 0 1 4 0M16 14V5.5a2 2 0 0 1 4 0M8 9h4M16 9h4">
+                                                                             </path>
+                                                                      </svg>{{ 'PAGES.PROPERTIES.TEXT_0012' | translate
+                                                                      }}</li>
+                                                               <li
+                                                                      class="inline-flex items-center gap-1.5 border px-2.5 py-1.5 text-xs border-paper-line bg-paper-lift text-ink">
+                                                                      <svg viewBox="0 0 24 24"
+                                                                             class="h-3.5 w-3.5 shrink-0 text-gold-deep"
+                                                                             fill="none" stroke="currentColor"
+                                                                             stroke-width="1.6" stroke-linecap="round"
+                                                                             stroke-linejoin="round" aria-hidden="true">
+                                                                             <path
+                                                                                    d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18M5.2 5.2c3.6 3 3.6 10.6 0 13.6M18.8 5.2c-3.6 3-3.6 10.6 0 13.6">
+                                                                             </path>
+                                                                      </svg>{{ 'PAGES.PROPERTIES.TEXT_0013' | translate
+                                                                      }}</li>
+                                                               <li
+                                                                      class="inline-flex items-center gap-1.5 border px-2.5 py-1.5 text-xs border-paper-line bg-paper-lift text-ink">
+                                                                      <svg viewBox="0 0 24 24"
+                                                                             class="h-3.5 w-3.5 shrink-0 text-gold-deep"
+                                                                             fill="none" stroke="currentColor"
+                                                                             stroke-width="1.6" stroke-linecap="round"
+                                                                             stroke-linejoin="round" aria-hidden="true">
+                                                                             <path
+                                                                                    d="M5 3.5h14v17H5zM10 16.5v-9h3.2a2.6 2.6 0 0 1 0 5.2H10">
+                                                                             </path>
+                                                                      </svg>{{ 'PAGES.PROPERTIES.TEXT_0014' | translate
+                                                                      }}</li>
+                                                               <li
+                                                                      class="inline-flex items-center border border-dashed px-2.5 py-1.5 text-xs border-paper-line text-muted">
+                                                                      {{ 'PAGES.PROPERTIES.TEXT_0015' | translate }}
+                                                               </li>
+                                                        </ul>
+                                                        <p
+                                                               class="mt-auto flex items-center gap-2 pt-6 text-[0.6875rem] text-muted">
+                                                               <span class="inline-block h-1 w-1 shrink-0 rounded-full bg-gold-deep/60"
+                                                                      aria-hidden="true"></span>{{
+                                                               'PAGES.PROPERTIES.TEXT_0016' | translate }} <span
+                                                                      class="tnum text-ink/70">{{
+                                                                      'PAGES.PROPERTIES.TEXT_0017' | translate }}</span>
+                                                        </p>
+                                                 </div>
+                                          </article>
+                                   </li>
+                            </ul>
+                            <p class="mt-10 hidden text-lg text-muted" data-no-results="">{{
+                                   'PAGES.PROPERTIES.TEXT_0018' | translate }}</p>
+                     </div>
+              </div>
+       </section>
+       <section id="formulario" class="bg-paper text-ink py-24 md:py-32 scroll-mt-24">
+              <div class="mx-auto max-w-[1600px] px-5 md:px-10">
+                     <div class="grid gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-24">
+                            <div data-reveal="">
+                                   <h2 class="font-display text-display-2">{{ 'PAGES.PROPERTIES.TEXT_0019' | translate
+                                          }}</h2>
+                                   <p class="measure mt-6 text-lg text-muted">{{ 'PAGES.PROPERTIES.TEXT_0020' |
+                                          translate }}</p>
+                            </div>
+                            <div class="border border-paper-line bg-paper-lift p-8 md:p-10" data-reveal=""
+                                   data-reveal-delay="100">
+                                   <form id="page-lead-form" class="flex flex-col gap-6 " method="post"
+                                          action="http://79.168.220.226:8080/api/leads" novalidate="" data-lead-form=""
+                                          data-source="properties" [attr.data-locale]="'FORM.LOCALE' | translate"
+                                          data-success-id="page-lead-success"
+                                          [attr.data-msg-sending]="'PAGES.PROPERTIES.ATTR_0002' | translate"
+                                          [attr.data-msg-generic]="'PAGES.PROPERTIES.ATTR_0003' | translate"
+                                          [attr.data-msg-error]="'PAGES.PROPERTIES.ATTR_0004' | translate">
+                                          <div class="grid gap-6 sm:grid-cols-2">
+                                                 <div class="flex flex-col gap-1"><label class="label text-muted"
+                                                               for="page-lead-name">{{ 'PAGES.PROPERTIES.TEXT_0021' |
+                                                               translate }} <span class="text-gold"
+                                                                      aria-hidden="true">{{ 'PAGES.PROPERTIES.TEXT_0022'
+                                                                      | translate }}</span><span class="sr-only">{{
+                                                                      'PAGES.PROPERTIES.TEXT_0023' | translate
+                                                                      }}</span></label><input
+                                                               class="w-full border-b border-paper-line bg-transparent px-0 py-3 text-ink placeholder:text-muted/50 focus:border-gold-deep focus:outline-none"
+                                                               type="text" id="page-lead-name" name="name"
+                                                               autocomplete="name" required=""
+                                                               aria-describedby="page-lead-name-error">
+                                                        <p id="page-lead-name-error" class="hidden text-xs text-gold"
+                                                               data-error-for="name" role="alert">{{
+                                                               'PAGES.PROPERTIES.TEXT_0024' | translate }}</p>
+                                                 </div>
+                                                 <div class="flex flex-col gap-1"><label class="label text-muted"
+                                                               for="page-lead-email">{{ 'PAGES.PROPERTIES.TEXT_0025' |
+                                                               translate }} <span class="text-gold"
+                                                                      aria-hidden="true">{{ 'PAGES.PROPERTIES.TEXT_0026'
+                                                                      | translate }}</span><span class="sr-only">{{
+                                                                      'PAGES.PROPERTIES.TEXT_0027' | translate
+                                                                      }}</span></label><input
+                                                               class="w-full border-b border-paper-line bg-transparent px-0 py-3 text-ink placeholder:text-muted/50 focus:border-gold-deep focus:outline-none"
+                                                               type="email" id="page-lead-email" name="email"
+                                                               autocomplete="email" required=""
+                                                               aria-describedby="page-lead-email-error">
+                                                        <p id="page-lead-email-error" class="hidden text-xs text-gold"
+                                                               data-error-for="email" role="alert">{{
+                                                               'PAGES.PROPERTIES.TEXT_0028' | translate }}</p>
+                                                 </div>
+                                                 <div class="flex flex-col gap-1"><label class="label text-muted"
+                                                               for="page-lead-phone">{{ 'PAGES.PROPERTIES.TEXT_0029' |
+                                                               translate }} <span class="text-gold"
+                                                                      aria-hidden="true">{{ 'PAGES.PROPERTIES.TEXT_0030'
+                                                                      | translate }}</span><span class="sr-only">{{
+                                                                      'PAGES.PROPERTIES.TEXT_0031' | translate
+                                                                      }}</span></label><input
+                                                               class="w-full border-b border-paper-line bg-transparent px-0 py-3 text-ink placeholder:text-muted/50 focus:border-gold-deep focus:outline-none"
+                                                               type="tel" id="page-lead-phone" name="phone"
+                                                               autocomplete="tel" required=""
+                                                               aria-describedby="page-lead-phone-error">
+                                                        <p id="page-lead-phone-error" class="hidden text-xs text-gold"
+                                                               data-error-for="phone" role="alert">{{
+                                                               'PAGES.PROPERTIES.TEXT_0032' | translate }}</p>
+                                                 </div>
+                                                 <div class="flex flex-col gap-1"><label class="label text-muted"
+                                                               for="page-lead-address">{{ 'PAGES.PROPERTIES.TEXT_0033' |
+                                                               translate }} <span class="opacity-60">{{
+                                                                      'PAGES.PROPERTIES.TEXT_0034' | translate
+                                                                      }}</span></label><input
+                                                               class="w-full border-b border-paper-line bg-transparent px-0 py-3 text-ink placeholder:text-muted/50 focus:border-gold-deep focus:outline-none"
+                                                               type="text" id="page-lead-address" name="address"
+                                                               autocomplete="street-address"></div>
+                                          </div>
+                                          <div class="flex flex-col gap-1"><label class="label text-muted"
+                                                        for="page-lead-message">{{ 'PAGES.PROPERTIES.TEXT_0035' |
+                                                        translate }} <span class="opacity-60">{{
+                                                               'PAGES.PROPERTIES.TEXT_0036' | translate
+                                                               }}</span></label><textarea
+                                                        class="w-full border-b border-paper-line bg-transparent px-0 py-3 text-ink placeholder:text-muted/50 focus:border-gold-deep focus:outline-none resize-y"
+                                                        id="page-lead-message" name="message" rows="3"></textarea></div>
+                                          <!-- Honeypot. Never shown, never announced, never focusable. -->
+                                          <div class="absolute left-[-9999px] h-0 w-0 overflow-hidden"
+                                                 aria-hidden="true"><label for="page-lead-company">{{
+                                                        'PAGES.PROPERTIES.TEXT_0037' | translate }}</label><input
+                                                        type="text" id="page-lead-company" name="company" tabindex="-1"
+                                                        autocomplete="off"></div><input type="hidden" name="source"
+                                                 value="properties"><input type="hidden" name="locale"
+                                                 value="{{ 'FORM.LOCALE' | translate }}"><input type="hidden"
+                                                 name="elapsedMs" value="0" data-elapsed=""><input type="hidden"
+                                                 name="estimate" value="" data-estimate-state="">
+                                          <div class="flex flex-col gap-1">
+                                                 <div class="flex items-start gap-3"><input
+                                                               class="mt-1 h-4 w-4 shrink-0 accent-gold" type="checkbox"
+                                                               id="page-lead-consent" name="consent" value="yes"
+                                                               required=""
+                                                               aria-describedby="page-lead-consent-error"><label
+                                                               class="text-xs leading-relaxed text-muted"
+                                                               for="page-lead-consent">{{ 'PAGES.PROPERTIES.TEXT_0038' |
+                                                               translate }} <a
+                                                                      class="underline decoration-gold underline-offset-2"
+                                                                      [routerLink]="'ROUTES.PRIVACY' | translate">{{
+                                                                      'PAGES.PROPERTIES.TEXT_0040' | translate }}</a>{{
+                                                               'PAGES.PROPERTIES.TEXT_0039' | translate }}</label></div>
+                                                 <p id="page-lead-consent-error" class="hidden text-xs text-gold"
+                                                        data-error-for="consent" role="alert">{{
+                                                        'PAGES.PROPERTIES.TEXT_0041' | translate }}</p>
+                                          </div>
+                                          <div class="flex flex-wrap items-center gap-4"><button type="submit"
+                                                        class="label bg-gold px-7 py-4 text-ink transition-colors hover:bg-gold-light disabled:opacity-60"
+                                                        data-submit=""><span data-submit-label="">{{
+                                                               'PAGES.PROPERTIES.TEXT_0042' | translate
+                                                               }}</span></button>
+                                                 <p class="text-xs text-muted" data-status="" role="status"
+                                                        aria-live="polite"></p>
+                                          </div>
+                                   </form><!-- Success state replaces the form in place. -->
+                                   <div id="page-lead-success" hidden="" class="flex flex-col gap-3 py-8">
+                                          <p class="label text-accent-on-dark">{{ 'PAGES.PROPERTIES.TEXT_0043' |
+                                                 translate }}</p>
+                                          <p class="measure text-lg text-ink">{{ 'PAGES.PROPERTIES.TEXT_0044' |
+                                                 translate }}</p>
+                                   </div>
+                            </div>
+                     </div>
+              </div>
+       </section>
+</main>

@@ -1,0 +1,96 @@
+<section class="bg-paper-lift py-16 text-ink md:py-32" aria-labelledby="availability-heading">
+  <div class="mx-auto max-w-[1600px] px-5 md:px-10">
+    <div class="max-w-2xl" data-reveal="">
+      <p class="label flex items-center gap-3 text-accent-on-light">
+        <span class="h-px w-8 bg-gold-deep/30" aria-hidden="true"></span>
+        <span>{{ 'PAGES.PROPERTYDETAIL.CALENDAR_EYEBROW' | translate }}</span>
+      </p>
+      <h2 id="availability-heading" class="mt-8 font-display text-display-2">
+        {{ 'PAGES.PROPERTYDETAIL.CALENDAR_TITLE' | translate }}
+      </h2>
+      <p class="measure mt-6 text-lg text-muted">
+        {{ 'PAGES.PROPERTYDETAIL.CALENDAR_DESCRIPTION' | translate }}
+      </p>
+    </div>
+
+    <div class="mt-8 border border-paper-line bg-paper p-3 sm:mt-12 sm:p-5 md:p-8" data-reveal=""
+      data-reveal-delay="100">
+      <div class="flex flex-wrap items-center justify-between gap-5">
+        <div class="flex w-full items-center justify-between gap-2 sm:w-auto sm:justify-start sm:gap-4">
+          <button type="button" (click)="previousMonth()"
+            [attr.aria-label]="'PAGES.PROPERTYDETAIL.CALENDAR_PREVIOUS' | translate"
+            class="flex h-11 w-11 items-center justify-center border border-paper-line text-ink transition-colors hover:border-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold">
+            <span aria-hidden="true">←</span>
+          </button>
+          <h3 class="min-w-0 flex-1 text-center font-display text-lg capitalize sm:min-w-40 sm:flex-none sm:text-2xl"
+            aria-live="polite">
+            {{ monthTitle }}
+          </h3>
+          <button type="button" (click)="nextMonth()"
+            [attr.aria-label]="'PAGES.PROPERTYDETAIL.CALENDAR_NEXT' | translate"
+            class="flex h-11 w-11 items-center justify-center border border-paper-line text-ink transition-colors hover:border-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold">
+            <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </div>
+
+      @if (calendarStatus === 'loading') {
+      <p class="mt-6 text-sm text-muted" role="status">
+        {{ 'PAGES.PROPERTYDETAIL.CALENDAR_LOADING' | translate }}
+      </p>
+      } @else if (calendarStatus === 'error') {
+      <p class="mt-6 text-sm text-gold-deep" role="alert">
+        {{ 'PAGES.PROPERTYDETAIL.CALENDAR_ERROR' | translate }}
+      </p>
+      }
+
+      <div class="mt-6 overflow-x-auto sm:mt-8">
+        <table class="w-full table-fixed border-collapse" [attr.aria-label]="monthTitle">
+          <thead>
+            <tr>
+              @for (weekday of weekdays; track weekday.full) {
+              <th scope="col" [attr.aria-label]="weekday.full"
+                class="border-b border-paper-line px-0 pb-2 text-center text-[0.625rem] label text-muted sm:px-1 sm:pb-3 sm:text-xs">
+                <span class="weekday-compact">{{ weekday.compact }}</span>
+                <span class="weekday-desktop">{{ weekday.short }}</span>
+              </th>
+              }
+            </tr>
+          </thead>
+          <tbody>
+            @for (week of calendarWeeks; track $index) {
+            <tr>
+              @for (day of week; track day.dateKey) {
+              <td class="calendar-day-cell border-b border-paper-line py-1 text-center sm:py-2"
+                [class.opacity-40]="!day.inCurrentMonth"
+                [attr.aria-label]="formatAccessibleDay(day)">
+                <span
+                  class="mx-auto flex h-8 w-8 items-center justify-center rounded-full text-xs tnum sm:h-10 sm:w-10 sm:text-sm md:h-12 md:w-12"
+                  [class.bg-ink]="day.booked" [class.text-white]="day.booked"
+                  [class.border]="day.today && !day.booked" [class.border-gold-deep]="day.today && !day.booked">
+                  {{ day.date.getDate() }}
+                </span>
+              </td>
+              }
+            </tr>
+            }
+          </tbody>
+        </table>
+      </div>
+
+      <div class="mt-5 flex flex-wrap items-center gap-x-5 gap-y-3 text-sm text-muted sm:mt-6 sm:gap-x-8 gap-2">
+        <span class="inline-flex items-center gap-2 ml-2">
+          <span class="h-4 w-4 rounded-full bg-ink" aria-hidden="true"></span>
+          {{ 'PAGES.PROPERTYDETAIL.CALENDAR_BOOKED' | translate }}
+        </span>
+        <span class="inline-flex items-center gap-2">
+          <span class="h-4 w-4 rounded-full border border-gold-deep" aria-hidden="true"></span>
+          {{ 'PAGES.PROPERTYDETAIL.CALENDAR_TODAY' | translate }}
+        </span>
+      </div>
+      <p class="mt-6 border-t border-paper-line pt-5 text-xs leading-relaxed text-muted ml-2">
+        {{ 'PAGES.PROPERTYDETAIL.CALENDAR_NOTE' | translate }}
+      </p>
+    </div>
+  </div>
+</section>

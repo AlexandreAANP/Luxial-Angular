@@ -1,0 +1,319 @@
+<main id="main">
+  <div data-property-bar="" aria-hidden="true"
+    class="pointer-events-none fixed inset-x-0 z-40 border-b border-ink bg-paper-lift/95 backdrop-blur transition-[opacity,transform] duration-300 ease-out"
+    style="top: 64px; opacity: 0; transform: translateY(-100%);">
+    <div class="mx-auto flex max-w-[1600px] items-baseline gap-x-4 gap-y-1 overflow-hidden px-5 py-2.5 md:px-10"><span
+        class="truncate font-display text-lg text-ink md:text-xl">{{ 'PAGES.PROPERTYDETAIL.TEXT_0001' | translate
+        }}</span><span class="label hidden shrink-0 text-accent-on-lift sm:block">{{ 'PAGES.PROPERTYDETAIL.TEXT_0002' |
+        translate }}</span></div>
+  </div>
+  <header class="border-b border-ink-line bg-ink px-5 pt-36 pb-16 text-white md:px-10 md:pt-44 md:pb-20">
+    <div class="mx-auto max-w-[1600px]"><a class="label link-underline text-muted-dim"
+        [routerLink]="'ROUTES.PROPERTIES' | translate">{{ 'PAGES.PROPERTYDETAIL.TEXT_0003' | translate }}</a>
+      <p class="label mt-8 text-accent-on-dark">{{ 'PAGES.PROPERTYDETAIL.TEXT_0004' | translate }}</p>
+      <h1 class="mt-5 font-display text-display-1">{{ 'PAGES.PROPERTYDETAIL.TEXT_0005' | translate }}</h1>
+      <p class="measure mt-6 text-lg text-white/70">{{ 'PAGES.PROPERTYDETAIL.TEXT_0006' | translate }}</p>
+    </div>
+  </header><!-- Gallery. Real images when they exist; labelled placeholders until then. -->
+  <section class="bg-paper px-5 pt-14 md:px-10"><!-- Three columns with the lead photograph at 2x2: six images tile exactly,
+       and `dense` backfills any hole if the count changes. -->
+    <div class="mx-auto grid max-w-[1600px] gap-3 [grid-auto-flow:dense] md:grid-cols-3"><a
+        href="_astro/01.BbE-xyL4_1MynRL.webp" data-lightbox="0"
+        class="group/photo relative block overflow-hidden focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold md:col-span-2 md:row-span-2"><img
+          src="_astro/01.BbE-xyL4_Z2emTd1.webp"
+          srcset="_astro/01.BbE-xyL4_1C9YCg.webp 600w, _astro/01.BbE-xyL4_Z1Lcaxg.webp 900w, _astro/01.BbE-xyL4_Z2cv9Qy.webp 1400w"
+          alt="{{ 'PAGES.PROPERTYDETAIL.ATTR_0001' | translate }}" sizes="(min-width: 768px) 50vw, 92vw" loading="eager"
+          decoding="async" width="1920" height="2879"
+          class="h-full w-full object-cover transition-transform duration-500 group-hover/photo:scale-[1.03] motion-reduce:transition-none motion-reduce:group-hover/photo:scale-100"><span
+          class="label pointer-events-none absolute inset-x-0 bottom-0 translate-y-full bg-ink/80 px-4 py-2.5 text-white opacity-0 transition duration-300 group-hover/photo:translate-y-0 group-hover/photo:opacity-100 group-focus-visible/photo:translate-y-0 group-focus-visible/photo:opacity-100 motion-reduce:transition-none"
+          aria-hidden="true">{{ 'PAGES.PROPERTYDETAIL.TEXT_0007' | translate }}</span></a><a
+        href="_astro/05.CB-hkDnH_1lyOyG.webp" data-lightbox="1"
+        class="group/photo relative block overflow-hidden focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"><img
+          src="_astro/05.CB-hkDnH_2sgMFK.webp"
+          srcset="_astro/05.CB-hkDnH_1C5d68.webp 300w, _astro/05.CB-hkDnH_Z6jTPH.webp 500w, _astro/05.CB-hkDnH_Z22m2dc.webp 800w"
+          alt="{{ 'PAGES.PROPERTYDETAIL.ATTR_0002' | translate }}" sizes="(min-width: 768px) 25vw, 92vw" loading="lazy"
+          decoding="async" width="1920" height="1280"
+          class="h-full w-full object-cover transition-transform duration-500 group-hover/photo:scale-[1.03] motion-reduce:transition-none motion-reduce:group-hover/photo:scale-100"><span
+          class="label pointer-events-none absolute inset-x-0 bottom-0 translate-y-full bg-ink/80 px-4 py-2.5 text-white opacity-0 transition duration-300 group-hover/photo:translate-y-0 group-hover/photo:opacity-100 group-focus-visible/photo:translate-y-0 group-focus-visible/photo:opacity-100 motion-reduce:transition-none"
+          aria-hidden="true">{{ 'PAGES.PROPERTYDETAIL.TEXT_0008' | translate }}</span></a><a
+        href="_astro/06.xvuiTFiL_ZtvxgS.webp" data-lightbox="2"
+        class="group/photo relative block overflow-hidden focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"><img
+          src="_astro/06.xvuiTFiL_CbpPb.webp"
+          srcset="_astro/06.xvuiTFiL_2nuBok.webp 300w, _astro/06.xvuiTFiL_E5tru.webp 500w, _astro/06.xvuiTFiL_Z1gVCU0.webp 800w"
+          alt="{{ 'PAGES.PROPERTYDETAIL.ATTR_0003' | translate }}" sizes="(min-width: 768px) 25vw, 92vw" loading="lazy"
+          decoding="async" width="1920" height="1280"
+          class="h-full w-full object-cover transition-transform duration-500 group-hover/photo:scale-[1.03] motion-reduce:transition-none motion-reduce:group-hover/photo:scale-100"><span
+          class="label pointer-events-none absolute inset-x-0 bottom-0 translate-y-full bg-ink/80 px-4 py-2.5 text-white opacity-0 transition duration-300 group-hover/photo:translate-y-0 group-hover/photo:opacity-100 group-focus-visible/photo:translate-y-0 group-focus-visible/photo:opacity-100 motion-reduce:transition-none"
+          aria-hidden="true">{{ 'PAGES.PROPERTYDETAIL.TEXT_0009' | translate }}</span></a><a
+        href="_astro/04.C72XcO7-_19RFBx.webp" data-lightbox="3"
+        class="group/photo relative block overflow-hidden focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"><img
+          src="_astro/04.C72XcO7-_2gzDIB.webp"
+          srcset="_astro/04.C72XcO7-_Z1koPkN.webp 300w, _astro/04.C72XcO7-_21nawi.webp 500w, _astro/04.C72XcO7-_5l39N.webp 800w"
+          alt="{{ 'PAGES.PROPERTYDETAIL.ATTR_0004' | translate }}" sizes="(min-width: 768px) 25vw, 92vw" loading="lazy"
+          decoding="async" width="1920" height="1280"
+          class="h-full w-full object-cover transition-transform duration-500 group-hover/photo:scale-[1.03] motion-reduce:transition-none motion-reduce:group-hover/photo:scale-100"><span
+          class="label pointer-events-none absolute inset-x-0 bottom-0 translate-y-full bg-ink/80 px-4 py-2.5 text-white opacity-0 transition duration-300 group-hover/photo:translate-y-0 group-hover/photo:opacity-100 group-focus-visible/photo:translate-y-0 group-focus-visible/photo:opacity-100 motion-reduce:transition-none"
+          aria-hidden="true">{{ 'PAGES.PROPERTYDETAIL.TEXT_0010' | translate }}</span></a><a
+        href="_astro/03.13tEKdQ5_Z1jL55G.webp" data-lightbox="4"
+        class="group/photo relative block overflow-hidden focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"><img
+          src="_astro/03.13tEKdQ5_Zd46XC.webp"
+          srcset="_astro/03.13tEKdQ5_3KgBy.webp 300w, _astro/03.13tEKdQ5_Z1EDQkh.webp 500w, _astro/03.13tEKdQ5_1tva7a.webp 800w"
+          alt="{{ 'PAGES.PROPERTYDETAIL.ATTR_0005' | translate }}" sizes="(min-width: 768px) 25vw, 92vw" loading="lazy"
+          decoding="async" width="1920" height="1280"
+          class="h-full w-full object-cover transition-transform duration-500 group-hover/photo:scale-[1.03] motion-reduce:transition-none motion-reduce:group-hover/photo:scale-100"><span
+          class="label pointer-events-none absolute inset-x-0 bottom-0 translate-y-full bg-ink/80 px-4 py-2.5 text-white opacity-0 transition duration-300 group-hover/photo:translate-y-0 group-hover/photo:opacity-100 group-focus-visible/photo:translate-y-0 group-focus-visible/photo:opacity-100 motion-reduce:transition-none"
+          aria-hidden="true">{{ 'PAGES.PROPERTYDETAIL.TEXT_0011' | translate }}</span></a><a
+        href="_astro/02.wQ7KwPOo_ueqSV.webp" data-lightbox="5"
+        class="group/photo relative block overflow-hidden focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"><img
+          src="_astro/02.wQ7KwPOo_1AVp10.webp"
+          srcset="_astro/02.wQ7KwPOo_hl67F.webp 300w, _astro/02.wQ7KwPOo_Z1r41Oa.webp 500w, _astro/02.wQ7KwPOo_1H5YCh.webp 800w"
+          alt="{{ 'PAGES.PROPERTYDETAIL.ATTR_0006' | translate }}" sizes="(min-width: 768px) 25vw, 92vw" loading="lazy"
+          decoding="async" width="1920" height="1280"
+          class="h-full w-full object-cover transition-transform duration-500 group-hover/photo:scale-[1.03] motion-reduce:transition-none motion-reduce:group-hover/photo:scale-100"><span
+          class="label pointer-events-none absolute inset-x-0 bottom-0 translate-y-full bg-ink/80 px-4 py-2.5 text-white opacity-0 transition duration-300 group-hover/photo:translate-y-0 group-hover/photo:opacity-100 group-focus-visible/photo:translate-y-0 group-focus-visible/photo:opacity-100 motion-reduce:transition-none"
+          aria-hidden="true">{{ 'PAGES.PROPERTYDETAIL.TEXT_0012' | translate }}</span></a></div>
+  </section>
+  
+  <dialog data-lightbox-dialog="" aria-label="{{ 'PAGES.PROPERTYDETAIL.ATTR_0007' | translate }}"
+    class="max-h-none max-w-none bg-transparent p-0 backdrop:bg-ink/92 backdrop:backdrop-blur-sm">
+    <div class="flex h-svh w-screen flex-col">
+      <div class="flex shrink-0 items-center justify-between gap-4 px-4 py-3 md:px-6">
+        <p class="label tnum text-muted-dim" data-lightbox-counter=""
+          [attr.data-template]="'PAGES.PROPERTYDETAIL.ATTR_0008' | translate" aria-live="polite"></p><button
+          type="button" data-lightbox-close=""
+          class="label flex items-center gap-2 px-2 py-2 text-white/80 transition-colors hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold">{{
+          'PAGES.PROPERTYDETAIL.TEXT_0013' | translate }}<svg viewBox="0 0 24 24" class="h-4 w-4" fill="none"
+            stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+            <path d="M6 6l12 12M18 6L6 18"></path>
+          </svg></button>
+      </div>
+      <div class="relative flex min-h-0 flex-1 items-center justify-center px-3 pb-3 md:px-6 md:pb-6"><img
+          data-lightbox-image="" alt="" class="max-h-full max-w-full object-contain"><button type="button"
+          data-lightbox-prev="" aria-label="{{ 'PAGES.PROPERTYDETAIL.ATTR_0009' | translate }}"
+          class="absolute left-3 flex h-11 w-11 items-center justify-center border border-white/25 bg-ink/70 text-white transition-colors hover:border-gold hover:text-gold focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold md:left-8"><svg
+            viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+            <path d="M15 5l-7 7 7 7"></path>
+          </svg></button><button type="button" data-lightbox-next=""
+          aria-label="{{ 'PAGES.PROPERTYDETAIL.ATTR_0010' | translate }}"
+          class="absolute right-3 flex h-11 w-11 items-center justify-center border border-white/25 bg-ink/70 text-white transition-colors hover:border-gold hover:text-gold focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold md:right-8"><svg
+            viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+            <path d="M9 5l7 7-7 7"></path>
+          </svg></button></div>
+      <p class="shrink-0 px-4 pb-5 text-center text-sm text-muted-dim md:px-6" data-lightbox-caption=""></p>
+    </div>
+  </dialog>
+  
+  <section class="bg-paper text-ink py-24 md:py-32 ">
+    <div class="mx-auto max-w-[1600px] px-5 md:px-10">
+      <div class="grid gap-14 lg:grid-cols-[1.15fr_0.85fr] lg:gap-24">
+        <div data-reveal="">
+          <p class="label flex items-center gap-3 text-accent-on-light "><span class="h-px w-8 bg-gold-deep/30"
+              aria-hidden="true"></span><span>{{ 'PAGES.PROPERTYDETAIL.TEXT_0014' | translate }}</span></p>
+          <div class="mt-8 flex flex-col gap-5">
+            <p class="measure text-lg leading-relaxed">{{ 'PAGES.PROPERTYDETAIL.TEXT_0015' | translate }}</p>
+            <p class="measure text-lg leading-relaxed">{{ 'PAGES.PROPERTYDETAIL.TEXT_0016' | translate }}</p>
+            <p class="measure text-lg leading-relaxed">{{ 'PAGES.PROPERTYDETAIL.TEXT_0017' | translate }}</p>
+            <p class="measure text-lg leading-relaxed">{{ 'PAGES.PROPERTYDETAIL.TEXT_0018' | translate }}</p>
+          </div>
+          <h2 class="label mt-14 text-accent-on-light">{{ 'PAGES.PROPERTYDETAIL.TEXT_0019' | translate }}</h2>
+          <ul class="mt-6 grid gap-x-8 gap-y-3 border-t border-paper-line pt-6 sm:grid-cols-2">
+            <li class="flex items-center gap-3 text-ink"><svg viewBox="0 0 24 24"
+                class="h-4 w-4 shrink-0 text-gold-deep" fill="none" stroke="currentColor" stroke-width="1.6"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path
+                  d="M2 15.5c2.2-2 4.4-2 6.6 0s4.4 2 6.6 0 4.4-2 6.8 0M2 19.5c2.2-2 4.4-2 6.6 0s4.4 2 6.6 0 4.4-2 6.8 0M12 3.5a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7">
+                </path>
+              </svg>{{ 'PAGES.PROPERTYDETAIL.TEXT_0020' | translate }}</li>
+            <li class="flex items-center gap-3 text-ink"><svg viewBox="0 0 24 24"
+                class="h-4 w-4 shrink-0 text-gold-deep" fill="none" stroke="currentColor" stroke-width="1.6"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 9.5h18M3 20.5h18M5 9.5v11M9 9.5v11M12 9.5v11M15 9.5v11M19 9.5v11M6 6h12"></path>
+              </svg>{{ 'PAGES.PROPERTYDETAIL.TEXT_0021' | translate }}</li>
+            <li class="flex items-center gap-3 text-ink"><svg viewBox="0 0 24 24"
+                class="h-4 w-4 shrink-0 text-gold-deep" fill="none" stroke="currentColor" stroke-width="1.6"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path
+                  d="M2 16.5c2-1.8 4-1.8 6 0s4 1.8 6 0 4-1.8 6 0M2 20.5c2-1.8 4-1.8 6 0s4 1.8 6 0 4-1.8 6 0M8 14V5.5a2 2 0 0 1 4 0M16 14V5.5a2 2 0 0 1 4 0M8 9h4M16 9h4">
+                </path>
+              </svg>{{ 'PAGES.PROPERTYDETAIL.TEXT_0022' | translate }}</li>
+            <li class="flex items-center gap-3 text-ink"><svg viewBox="0 0 24 24"
+                class="h-4 w-4 shrink-0 text-gold-deep" fill="none" stroke="currentColor" stroke-width="1.6"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path
+                  d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18M5.2 5.2c3.6 3 3.6 10.6 0 13.6M18.8 5.2c-3.6 3-3.6 10.6 0 13.6">
+                </path>
+              </svg>{{ 'PAGES.PROPERTYDETAIL.TEXT_0023' | translate }}</li>
+            <li class="flex items-center gap-3 text-ink"><svg viewBox="0 0 24 24"
+                class="h-4 w-4 shrink-0 text-gold-deep" fill="none" stroke="currentColor" stroke-width="1.6"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 3.5h14v17H5zM10 16.5v-9h3.2a2.6 2.6 0 0 1 0 5.2H10"></path>
+              </svg>{{ 'PAGES.PROPERTYDETAIL.TEXT_0024' | translate }}</li>
+            <li class="flex items-center gap-3 text-ink"><svg viewBox="0 0 24 24"
+                class="h-4 w-4 shrink-0 text-gold-deep" fill="none" stroke="currentColor" stroke-width="1.6"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M2.5 8.6a15 15 0 0 1 19 0M5.6 12.3a10 10 0 0 1 12.8 0M8.8 15.9a5 5 0 0 1 6.4 0M12 19.4h.01">
+                </path>
+              </svg>{{ 'PAGES.PROPERTYDETAIL.TEXT_0025' | translate }}</li>
+            <li class="flex items-center gap-3 text-ink"><svg viewBox="0 0 24 24"
+                class="h-4 w-4 shrink-0 text-gold-deep" fill="none" stroke="currentColor" stroke-width="1.6"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 4.5h18v11H3zM2 19.5h20M9.5 15.5v4M14.5 15.5v4"></path>
+              </svg>{{ 'PAGES.PROPERTYDETAIL.TEXT_0026' | translate }}</li>
+            <li class="flex items-center gap-3 text-ink"><svg viewBox="0 0 24 24"
+                class="h-4 w-4 shrink-0 text-gold-deep" fill="none" stroke="currentColor" stroke-width="1.6"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M15.5 4a4.5 4.5 0 1 1-4.2 6H9v3H6.5v-3H3.5v-3h7.8A4.5 4.5 0 0 1 15.5 4M16 8.5h.01"></path>
+              </svg>{{ 'PAGES.PROPERTYDETAIL.TEXT_0027' | translate }}</li>
+            <li class="flex items-center gap-3 text-ink"><svg viewBox="0 0 24 24"
+                class="h-4 w-4 shrink-0 text-gold-deep" fill="none" stroke="currentColor" stroke-width="1.6"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 21V10.5M3.5 10.5a8.5 8.5 0 0 1 17 0zM12 10.5c0-4.2 1.2-7 3.5-7"></path>
+              </svg>{{ 'PAGES.PROPERTYDETAIL.TEXT_0028' | translate }}</li>
+          </ul>
+        </div><!-- Booking rail: the only place a guest can act. -->
+        <aside class="lg:sticky lg:top-32 lg:self-start" data-reveal="" data-reveal-delay="100">
+          <div class="border border-paper-line bg-paper-lift p-8">
+            <dl class="grid grid-cols-2 gap-6">
+              <div>
+                <dt class="label text-muted">{{ 'PAGES.PROPERTYDETAIL.TEXT_0029' | translate }}</dt>
+                <dd class="mt-1 font-display text-xl">{{ 'PAGES.PROPERTYDETAIL.TEXT_0030' | translate }}</dd>
+              </div>
+              <div>
+                <dt class="label text-muted">{{ 'PAGES.PROPERTYDETAIL.TEXT_0031' | translate }}</dt>
+                <dd class="mt-1 font-display text-xl">{{ 'PAGES.PROPERTYDETAIL.TEXT_0032' | translate }}</dd>
+              </div>
+              <div>
+                <dt class="label text-muted">{{ 'PAGES.PROPERTYDETAIL.TEXT_0033' | translate }}</dt>
+                <dd class="mt-1 font-display text-xl">{{ 'PAGES.PROPERTYDETAIL.TEXT_0034' | translate }}</dd>
+              </div>
+              <div>
+                <dt class="label text-muted">{{ 'PAGES.PROPERTYDETAIL.TEXT_0035' | translate }}</dt>
+                <dd class="mt-1 font-display text-xl">{{ 'PAGES.PROPERTYDETAIL.TEXT_0036' | translate }}</dd>
+              </div>
+            </dl>
+            <div class="mt-8 border-t border-paper-line pt-8">
+              <h2 class="label text-accent-on-light">{{ 'PAGES.PROPERTYDETAIL.TEXT_0037' | translate }}</h2>
+              <p class="mt-3 text-sm text-muted">{{ 'PAGES.PROPERTYDETAIL.TEXT_0038' | translate }}</p>
+              <div class="mt-6 flex flex-col gap-3"><a
+                  class="label bg-gold px-6 py-4 text-center text-ink transition-colors hover:bg-gold-light"
+                  href="https://wa.me/message/774RREVATXYKF1" target="_blank" rel="noopener noreferrer">{{
+                  'PAGES.PROPERTYDETAIL.TEXT_0039' | translate }}<span
+                    class="mt-1 block text-[0.625rem] font-normal opacity-80">{{ 'PAGES.PROPERTYDETAIL.TEXT_0040' |
+                    translate }}</span><span class="sr-only"> {{ 'PAGES.PROPERTYDETAIL.TEXT_0041' | translate
+                    }}</span></a><a
+                  class="label border border-ink px-6 py-4 text-center text-ink transition-colors hover:bg-ink hover:text-white"
+                  href="https://www.airbnb.pt/rooms/1720230769186281472" target="_blank" rel="noopener noreferrer">{{
+                  'PAGES.PROPERTYDETAIL.TEXT_0042' | translate }}</a><a
+                  class="label border border-ink px-6 py-4 text-center text-ink transition-colors hover:bg-ink hover:text-white"
+                  href="https://www.booking.com/hotel/pt/luxial-tres-castelos-praia-da-rocha.pt-pt.html" target="_blank"
+                  rel="noopener noreferrer">{{ 'PAGES.PROPERTYDETAIL.TEXT_0043' | translate }}</a></div>
+              <p class="mt-8 border-t border-paper-line pt-6 text-xs text-muted">{{ 'PAGES.PROPERTYDETAIL.TEXT_0044' |
+                translate }}<br><span class="tnum text-ink">{{ 'PAGES.PROPERTYDETAIL.TEXT_0045' | translate }}</span>
+              </p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+  <app-availability-calendar></app-availability-calendar>
+  <section class="bg-ink text-white py-24 md:py-32 ">
+    <div class="mx-auto max-w-[1600px] px-5 md:px-10">
+      <div class="max-w-2xl" data-reveal="">
+        <p class="label flex items-center gap-3 text-accent-on-dark "><span class="h-px w-8 bg-gold/40"
+            aria-hidden="true"></span><span>{{ 'PAGES.PROPERTYDETAIL.TEXT_0046' | translate }}</span></p>
+        <h2 class="mt-8 font-display text-display-3">{{ 'PAGES.PROPERTYDETAIL.TEXT_0047' | translate }}</h2>
+      </div>
+      <p class="mt-10 text-muted-dim">{{ 'PAGES.PROPERTYDETAIL.TEXT_0048' | translate }}</p>
+    </div>
+  </section>
+  <section id="formulario" class="bg-paper text-ink py-24 md:py-32 scroll-mt-24">
+    <div class="mx-auto max-w-[1600px] px-5 md:px-10">
+      <div class="grid gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-24">
+        <div data-reveal="">
+          <h2 class="font-display text-display-2">{{ 'PAGES.PROPERTYDETAIL.TEXT_0049' | translate }}</h2>
+          <p class="measure mt-6 text-lg text-muted">{{ 'PAGES.PROPERTYDETAIL.TEXT_0050' | translate }}</p>
+        </div>
+        <div class="border border-paper-line bg-paper-lift p-8 md:p-10" data-reveal="" data-reveal-delay="100">
+          <form id="page-lead-form" class="flex flex-col gap-6 " method="post"
+            action="http://79.168.220.226:8080/api/leads" novalidate="" data-lead-form="" data-source="properties"
+            [attr.data-locale]="'FORM.LOCALE' | translate" data-success-id="page-lead-success"
+            [attr.data-msg-sending]="'PAGES.PROPERTYDETAIL.ATTR_0011' | translate"
+            [attr.data-msg-generic]="'PAGES.PROPERTYDETAIL.ATTR_0012' | translate"
+            [attr.data-msg-error]="'PAGES.PROPERTYDETAIL.ATTR_0013' | translate">
+            <div class="grid gap-6 sm:grid-cols-2">
+              <div class="flex flex-col gap-1"><label class="label text-muted" for="page-lead-name">{{
+                  'PAGES.PROPERTYDETAIL.TEXT_0051' | translate }} <span class="text-gold" aria-hidden="true">{{
+                    'PAGES.PROPERTYDETAIL.TEXT_0052' | translate }}</span><span class="sr-only">{{
+                    'PAGES.PROPERTYDETAIL.TEXT_0053' | translate }}</span></label><input
+                  class="w-full border-b border-paper-line bg-transparent px-0 py-3 text-ink placeholder:text-muted/50 focus:border-gold-deep focus:outline-none"
+                  type="text" id="page-lead-name" name="name" autocomplete="name" required=""
+                  aria-describedby="page-lead-name-error">
+                <p id="page-lead-name-error" class="hidden text-xs text-gold" data-error-for="name" role="alert">{{
+                  'PAGES.PROPERTYDETAIL.TEXT_0054' | translate }}</p>
+              </div>
+              <div class="flex flex-col gap-1"><label class="label text-muted" for="page-lead-email">{{
+                  'PAGES.PROPERTYDETAIL.TEXT_0055' | translate }} <span class="text-gold" aria-hidden="true">{{
+                    'PAGES.PROPERTYDETAIL.TEXT_0056' | translate }}</span><span class="sr-only">{{
+                    'PAGES.PROPERTYDETAIL.TEXT_0057' | translate }}</span></label><input
+                  class="w-full border-b border-paper-line bg-transparent px-0 py-3 text-ink placeholder:text-muted/50 focus:border-gold-deep focus:outline-none"
+                  type="email" id="page-lead-email" name="email" autocomplete="email" required=""
+                  aria-describedby="page-lead-email-error">
+                <p id="page-lead-email-error" class="hidden text-xs text-gold" data-error-for="email" role="alert">{{
+                  'PAGES.PROPERTYDETAIL.TEXT_0058' | translate }}</p>
+              </div>
+              <div class="flex flex-col gap-1"><label class="label text-muted" for="page-lead-phone">{{
+                  'PAGES.PROPERTYDETAIL.TEXT_0059' | translate }} <span class="text-gold" aria-hidden="true">{{
+                    'PAGES.PROPERTYDETAIL.TEXT_0060' | translate }}</span><span class="sr-only">{{
+                    'PAGES.PROPERTYDETAIL.TEXT_0061' | translate }}</span></label><input
+                  class="w-full border-b border-paper-line bg-transparent px-0 py-3 text-ink placeholder:text-muted/50 focus:border-gold-deep focus:outline-none"
+                  type="tel" id="page-lead-phone" name="phone" autocomplete="tel" required=""
+                  aria-describedby="page-lead-phone-error">
+                <p id="page-lead-phone-error" class="hidden text-xs text-gold" data-error-for="phone" role="alert">{{
+                  'PAGES.PROPERTYDETAIL.TEXT_0062' | translate }}</p>
+              </div>
+              <div class="flex flex-col gap-1"><label class="label text-muted" for="page-lead-address">{{
+                  'PAGES.PROPERTYDETAIL.TEXT_0063' | translate }} <span class="opacity-60">{{
+                    'PAGES.PROPERTYDETAIL.TEXT_0064' | translate }}</span></label><input
+                  class="w-full border-b border-paper-line bg-transparent px-0 py-3 text-ink placeholder:text-muted/50 focus:border-gold-deep focus:outline-none"
+                  type="text" id="page-lead-address" name="address" autocomplete="street-address"></div>
+            </div>
+            <div class="flex flex-col gap-1"><label class="label text-muted" for="page-lead-message">{{
+                'PAGES.PROPERTYDETAIL.TEXT_0065' | translate }} <span class="opacity-60">{{
+                  'PAGES.PROPERTYDETAIL.TEXT_0066' | translate }}</span></label><textarea
+                class="w-full border-b border-paper-line bg-transparent px-0 py-3 text-ink placeholder:text-muted/50 focus:border-gold-deep focus:outline-none resize-y"
+                id="page-lead-message" name="message" rows="3"></textarea></div>
+            <!-- Honeypot. Never shown, never announced, never focusable. -->
+            <div class="absolute left-[-9999px] h-0 w-0 overflow-hidden" aria-hidden="true"><label
+                for="page-lead-company">{{ 'PAGES.PROPERTYDETAIL.TEXT_0067' | translate }}</label><input type="text"
+                id="page-lead-company" name="company" tabindex="-1" autocomplete="off"></div><input type="hidden"
+              name="source" value="properties"><input type="hidden" name="locale"
+              value="{{ 'FORM.LOCALE' | translate }}"><input type="hidden" name="elapsedMs" value="0"
+              data-elapsed=""><input type="hidden" name="estimate" value="" data-estimate-state="">
+            <div class="flex flex-col gap-1">
+              <div class="flex items-start gap-3"><input class="mt-1 h-4 w-4 shrink-0 accent-gold" type="checkbox"
+                  id="page-lead-consent" name="consent" value="yes" required=""
+                  aria-describedby="page-lead-consent-error"><label class="text-xs leading-relaxed text-muted"
+                  for="page-lead-consent">{{ 'PAGES.PROPERTYDETAIL.TEXT_0068' | translate }} <a
+                    class="underline decoration-gold underline-offset-2" [routerLink]="'ROUTES.PRIVACY' | translate">{{
+                    'PAGES.PROPERTYDETAIL.TEXT_0070' | translate }}</a>{{ 'PAGES.PROPERTYDETAIL.TEXT_0069' | translate
+                  }}</label></div>
+              <p id="page-lead-consent-error" class="hidden text-xs text-gold" data-error-for="consent" role="alert">{{
+                'PAGES.PROPERTYDETAIL.TEXT_0071' | translate }}</p>
+            </div>
+            <div class="flex flex-wrap items-center gap-4"><button type="submit"
+                class="label bg-gold px-7 py-4 text-ink transition-colors hover:bg-gold-light disabled:opacity-60"
+                data-submit=""><span data-submit-label="">{{ 'PAGES.PROPERTYDETAIL.TEXT_0072' | translate
+                  }}</span></button>
+              <p class="text-xs text-muted" data-status="" role="status" aria-live="polite"></p>
+            </div>
+          </form><!-- Success state replaces the form in place. -->
+          <div id="page-lead-success" hidden="" class="flex flex-col gap-3 py-8">
+            <p class="label text-accent-on-dark">{{ 'PAGES.PROPERTYDETAIL.TEXT_0073' | translate }}</p>
+            <p class="measure text-lg text-ink">{{ 'PAGES.PROPERTYDETAIL.TEXT_0074' | translate }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
